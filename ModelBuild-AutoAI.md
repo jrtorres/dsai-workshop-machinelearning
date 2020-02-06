@@ -36,7 +36,7 @@ In the lab we will:
 
     ![Create Project](docs/images/ss8a.png)
 
-1. Select `Standard` as the type of project to create.
+1. Select `Create an empty project` as the type of project to create.
 
 1. Give your project a name and click **`Create`** on the bottom right.
 
@@ -50,7 +50,7 @@ In the lab we will:
 
     ![Add Associated Service](docs/images/add-associated-service.png)
 
-1. Click on the `Existing` tab and select the name of your Machine Learning service instance.
+1. Click on the `Existing` tab and select the name of your Machine Learning service instance, then click the `Select` button.
 
     ![Add Existing ML Service](docs/images/choose-ml-service.png)
   
@@ -66,7 +66,7 @@ In the lab we will:
 
     ![](docs/images/add-data-asset.png)
 
-1. On your machine, browse to the location of the file **patientdataV6.csv** in this repository in the **data/** directory. Select the file and click on Open (or the equivalent action for your operating system). Once successfully uploaded, the file should appear in the `Data Assets` section of `Assets`.
+1. On your machine, browse to the location of the file **TElco-Customer-Churn.csv** in this repository in the **data/** directory. Select the file and click on Open (or the equivalent action for your operating system). Once successfully uploaded, the file should appear in the `Data Assets` section of `Assets`.
 
 ## Step 3: Build Modeler Flow
 
@@ -84,7 +84,7 @@ In the lab we will:
 1. In the data selection window, select the data file that you uploaded to your project earlier, then click **`Select asset`**
     ![](docs/images/ss23.png)
 
-1. AutoAI will determine the data types and you will select the column to predict (i.e the target or the label). Select the `HEARTFAILURE` column and click the **`Run experiment`** button.
+1. AutoAI will determine the data types and you will select the column to predict (i.e the target or the label). Select the `CHURN` column and click the **`Run experiment`** button (button appears after selecting the model target). The experiment configuration can be modified but we will use the defaults.
 
     ![](docs/images/ss24.png)
 
@@ -104,7 +104,7 @@ In the lab we will:
 
     ![](docs/images/ss28.png)
 
-1. Once the experiment has completed, we have the option to save the best model. If you click on the `Save model` button next to the top pipeline you can save the model. Just give the model a name and click the **`Save`** button.
+1. Once the experiment has completed, we have the option to save the best model. If you click on the `Save as` button next to the top pipeline and select `Model` to save the model. Just give the model a name and click the **`Save`** button.
 
     ![](docs/images/ss29.png)
 
@@ -124,10 +124,8 @@ Although training is a critical step in the machine learning process, the model 
 
 1. Aside from testing the model within the notebook. You can test the model using the Watson Studio Interface.
 
+1. Go back to the project main page by clicking on the project name in the top left of the page.
+
 1. Click on the `Deployment` tab on the top of the project page and then click the name you used to create the deployment of your model
 
-   ![](docs/images/ss15.png)
-
 1. Enter some values in the form and click the `Predict` button.
-
-   ![](docs/images/ss16.png)
